@@ -1,0 +1,117 @@
+# kb_sdk notes
+
+## Meta and dot files
+
+Eclipse plugin files
+
+* .classpath - specifies locations of user-defined classes and packages -- an index -- except a bunch of jars/lib are in there too
+* .project
+* .pydevproject
+
+* .gitmodules -- two submodules --  jars and auth
+
+_Java stuff_
+
+* JAR_DEPS -- jar file list with versions
+* JAR_DEPS_BIN -- complete copy of JAR_DEPS (??)
+
+* test_dependencies.md -- many cpan deps
+
+DeveloperNotes.md -- something about generated annotation and java 9
+
+### KBaseJobService.spec
+
+KIDL spec -- JobState, JsonRpcError, RunJobParams (json rpc request)
+
+### Makefile
+
+## Docker
+
+Looks like it runs in a docker container. 
+
+openjdk-7
+
+Runs everything in `/src` -- does something funky with the CallbackServer.java (replaces en0 with eth0 -- prod vs dev?
+
+Bin is /src/bin
+
+## Sub-directories
+
+/img probably shouldn't be in here -- could have a separate kb_sdk_assets repo
+
+/javacc looks like it handles parsing java kidl with "jkidl" (in java_type_generator)
+
+/lib -- copied from another repo? (not a submodule)
+
+/lib/biokbase/log.py -- library for sending log messages to syslog
+
+/lib/biokbase/common/classtools.py -- some kind of very general tools object utilities around immutability
+
+/lib/biokbase/datastructures.py -- very general dict and list utilities
+
+/lib/Bio/KBase has perl utilities
+
+### /test_scripts
+
+test.cfg -- toml file -- needs token, endpoint, etc
+
+print_test_coverage.sh -- bunch of grep and awk
+
+py_module_tests vs python?
+
+py_module tests
+- auth_client
+
+python
+- run_client.py -- helper?
+- test_client.py
+
+## /src
+
+sh/sdk-completion.sh -- "set up parameter completion"
+
+/src/java/name/fraser/neil/plaintext
+
+/src/java/us/kbase
+
+* common
+  * utils/NetUtils.java -- some kind of ip address parser/resolver
+  * executionengine
+    * CallbackServer.java
+* catalog
+  * service
+    * Tuple{2,3,4}.java -- generic datatypes -- why here
+  * utils
+* jkidl  -- kidl parsing functionality
+* kidl -- oo classes representing kidl objects
+* kbasejobservice
+  * execute jobs, check status, handle errs
+  * KBaseJobServiceClient.java and KBaseJobServiceServer.java
+* mobu -- module builder
+  * initializer
+* narrativemethodstore ? (catalog of methods?)
+  * Handling stuff in display.yaml and spec.json
+* templates -- tons of KIDL specs
+* tools -- misc utils
+
+scripts/test -- lots of i/o tests
+
+# Cleanups
+
+KIDL utilities should be its own library
+
+move /doc into a separate sphinx repo
+
+.vscode should be gitignored
+
+should use npm inside docker to run tests
+
+move /src/java/name/fraser/neil/plaintext into a jar
+https://github.com/GerHobbelt/google-diff-match-patch
+https://github.com/google/diff-match-patch
+
+# Questions
+
+- Why are we committing all these 3rd-party jar files to the repo?
+- Pip and python packages are not used?
+- what is /submodules_hacks?
