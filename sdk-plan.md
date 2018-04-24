@@ -53,6 +53,7 @@ Disclaimer: Much of these ideas are unfinalized maybes.
 * Auto-generate a report based on some standard return data from the method
   * Can already return 
 * Easy `kb-sdk` installation with a shell command like: `curl https://sh.rustup.rs -sSf | sh`
+* `kb-sdk release` to publish changes
 * Add a `kb-sdk shell` command
 * Accept python unittest options in `kb-sdk test` (eg. for only testing a certain method)
 * Automatic Jinja2 html report template generation 
