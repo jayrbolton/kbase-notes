@@ -9,13 +9,12 @@ Disclaimer: Much of these ideas are unfinalized maybes.
     * Easier PR turnaround
   * Expand tutorial to use a different example that modifies Dockerfile and generates report files
   * Continue to clean up and expand How-to collection
+  * More working examples
+  * Expand overview test, graphics, and visualizations
 * Wiki (?)
   * Github wiki
   * accessibility for non-devs
-* Filled-out README.md's for all apps with example usage
-* docs pages
-  * More working examples
-  * Expand overview details and graphics
+* Filled-out README.md's for all apps with example apps -- (esp. reused apps)
 
 ## SDK code
 
@@ -29,7 +28,7 @@ Disclaimer: Much of these ideas are unfinalized maybes.
 
 * Gitignore all auto-generated code that is not meant to be edited and silo it in /build. Could have `kb-sdk make` to generate /build.
 * Use PyPi-hosted, versioned KBase pip packages for utilities
-* Continue to auto-generate configs (eg. `travis.yml`)
+* Continue to auto-generate configs (eg. `travis.yml`) as part of `kb-sdk init`
 * Example files that can be moved into /build or into pip packages:
   * /scripts and /test_local
   * authclient, baseclient, `*Client.py`, & java servers
@@ -44,14 +43,13 @@ Disclaimer: Much of these ideas are unfinalized maybes.
 ### General ease-of-use
 
 * Script generator
-  * One input, one output 
+  * One input, one output (?)
   * Need to expand concrete ideas here
 * Auto-download assembly and genome parameters to scratch if they have the right type
-  * ???
-  * auto-download to scratch
-  * abstract away scratch
+  * Maybe the type alone doesn't work
+  * Abstract away scratch -- auto-download to a path in scratch
 * Auto-generate a report based on some standard return data from the method
-  * Can already return 
+  * Can already do this to a limited extent
 * Easy `kb-sdk` installation with a shell command like: `curl https://sh.rustup.rs -sSf | sh`
 * `kb-sdk release` to publish changes
 * Add a `kb-sdk shell` command
