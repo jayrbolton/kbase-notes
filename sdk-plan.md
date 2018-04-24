@@ -46,14 +46,13 @@ Disclaimer: Much of these ideas are unfinalized maybes.
 * Script generator
   * One input, one output 
   * Need to expand concrete ideas here
-
-
 * Auto-download assembly and genome parameters to scratch if they have the right type
   * ???
   * auto-download to scratch
   * abstract away scratch
 * Auto-generate a report based on some standard return data from the method
   * Can already return 
+* Easy `kb-sdk` installation with a shell command like: `curl https://sh.rustup.rs -sSf | sh`
 * Add a `kb-sdk shell` command
 * Accept python unittest options in `kb-sdk test` (eg. for only testing a certain method)
 * Automatic Jinja2 html report template generation 
@@ -65,3 +64,4 @@ Disclaimer: Much of these ideas are unfinalized maybes.
 * Consider setting versions in dependencies.json with wildcards (eg. to 1.2.* or 1.*) as the default for all installed apps.
 * In app dev, always automatically pull the latest commit on master without having to re-register
 * For docs, use inspiration from common-readme: https://github.com/noffle/common-readme
+* QuickCheck for apps based on KIDL specs (automatic tests based on the types)
