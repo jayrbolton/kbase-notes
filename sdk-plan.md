@@ -67,3 +67,10 @@ Disclaimer: Much of these ideas are unfinalized.
 * In app dev, always automatically pull the latest commit on master without having to re-register
 * Auto-generate a README.md with ideas from common-readme: https://github.com/noffle/common-readme
 * QuickCheck for apps based on KIDL specs (automatic tests based on the types)
+
+### Resources
+
+* SDK presentation from jjeffryes https://docs.google.com/presentation/d/1it5n6TlUGAkUBbiex4WDebMDWtYZHTxicGFcHTvxluo/edit?usp=sharing
+* jfroula's SDK feedback https://gist.github.com/jfroula/3b23194bc08903ae23fad71268007b64
+* Bob and Nomi's notes: https://docs.google.com/document/d/16YTkKA6pRzEi0eWRyG6jSx_OUT8Cce-300dalPDKkJI/edit#
+* JGI Meeting feedback: https://docs.google.com/document/d/1BMeH6j7-LHANrw3KPITubgI8H91JyT_S2Ne4OSXa114/edit?ts=5ad65574
