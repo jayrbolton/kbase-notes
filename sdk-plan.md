@@ -48,6 +48,7 @@ Disclaimer: Much of these ideas are unfinalized.
   * Could be in the CLI or in an online UI (Jeff's examples: [ebot](https://www.ncbi.nlm.nih.gov/Class/PowerTools/eutils/ebot/ebot.cgi) and [nersc jobscript generator](https://my.nersc.gov/script_generator.php))
   * Need to expand concrete ideas here
   * Automatic Jinja2 html report template generation 
+* A `views` directory that can hoild Jinja2 templates. You could name these views in your return parameters to auto-generate html reports
 * Auto-generate python param schemas and validators with cerberos
 * Auto-download assembly and genome parameters to scratch if they have the right type
   * Maybe the type alone doesn't work
@@ -60,7 +61,8 @@ Disclaimer: Much of these ideas are unfinalized.
 * Add a `kb-sdk coverage` command that runs a simple http server on the test coverage directory
 * Use pipenv and set up a default Pipfile to make it easy for people to add pip packages
 * Debug mode / ENV variable
-  * If you set DEBUG=true or similar then utilites like DFU could print more helpful data.
+  * If you set the DEBUG env var (or similar) then utilites like DFU could print more or less helpful data
+* General error message audit and improvement for utils like DFU 
 
 ### Misc.
 
