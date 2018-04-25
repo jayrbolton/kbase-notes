@@ -1,6 +1,6 @@
 # SDK improvement
 
-Disclaimer: Much of these ideas are unfinalized maybes.
+Disclaimer: Much of these ideas are unfinalized.
 
 ## Docs
 
@@ -38,29 +38,32 @@ Disclaimer: Much of these ideas are unfinalized maybes.
 ### Simplify configs
 
 * Use a single, root `.yaml` file for all config
-* Use the README.md as the app's descriptionra
+* Use the README.md as the app's description on KBase
 
 ### General ease-of-use
 
-* Script generator
-  * One input, one output (?)
+* Easy `kb-sdk` installation with a shell command like: `curl https://sh.rustup.rs -sSf | sh`
+* Script generator and scaffolding commands
+  * Could be in the CLI or in an online UI (Jeff's examples: [ebot](https://www.ncbi.nlm.nih.gov/Class/PowerTools/eutils/ebot/ebot.cgi) and [nersc jobscript generator](https://my.nersc.gov/script_generator.php))
   * Need to expand concrete ideas here
+  * Automatic Jinja2 html report template generation 
+* Auto-generate python param schemas and validators with cerberos
 * Auto-download assembly and genome parameters to scratch if they have the right type
   * Maybe the type alone doesn't work
   * Abstract away scratch -- auto-download to a path in scratch
 * Auto-generate a report based on some standard return data from the method
   * Can already do this to a limited extent
-* Easy `kb-sdk` installation with a shell command like: `curl https://sh.rustup.rs -sSf | sh`
 * `kb-sdk release` to publish changes
 * Add a `kb-sdk shell` command
 * Accept python unittest options in `kb-sdk test` (eg. for only testing a certain method)
-* Automatic Jinja2 html report template generation 
 * Add a `kb-sdk coverage` command that runs a simple http server on the test coverage directory
-* Use pipenv and set up a default Pipfile
+* Use pipenv and set up a default Pipfile to make it easy for people to add pip packages
+* Debug mode / ENV variable
+  * If you set DEBUG=true or similar then utilites like DFU could print more helpful data.
 
 ### Misc.
 
-* Consider setting versions in dependencies.json with wildcards (eg. to 1.2.* or 1.*) as the default for all installed apps.
+* Consider setting versions in dependencies.json with wildcards (eg. to `1.2.*` or `1.*`) as the default for all installed apps.
 * In app dev, always automatically pull the latest commit on master without having to re-register
-* For docs, use inspiration from common-readme: https://github.com/noffle/common-readme
+* Auto-generate a README.md with ideas from common-readme: https://github.com/noffle/common-readme
 * QuickCheck for apps based on KIDL specs (automatic tests based on the types)
