@@ -35,6 +35,7 @@ Disclaimer: Much of these ideas are unfinalized.
   * authclient, baseclient, `*Client.py`, & java servers
   * Test class setup code
   * Makefile
+* Use single points of authority configuration files (eg. don't spread the module name throughout the codebase)
 
 ### Simplify configs
 
