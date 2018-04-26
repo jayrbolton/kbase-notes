@@ -10,10 +10,7 @@ Disclaimer: Much of these ideas are unfinalized.
   * Expand tutorial to use a different example that modifies Dockerfile and generates report files
   * Continue to clean up and expand How-to collection
   * More working examples
-  * Expand overview test, graphics, and visualizations
-* Wiki (?)
-  * Github wiki
-  * accessibility for non-devs
+  * Expand overview text, graphics, and visualizations
 * Filled-out README.md's for all apps with example apps -- (esp. reused apps)
 
 ## SDK code
