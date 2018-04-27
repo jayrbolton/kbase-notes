@@ -53,7 +53,7 @@ Disclaimer: Much of these ideas are unfinalized.
   * Abstract away scratch -- auto-download to a path in scratch
 * Auto-generate a report based on some standard return data from the method
   * Can already do this to a limited extent
-* `kb-sdk release` to publish changes
+* More CLI-based catalog actions, similar to package managers like `pip` or `npm` (eg. `kb-sdk release`)
 * Add a `kb-sdk shell` command
 * Accept python unittest options in `kb-sdk test` (eg. for only testing a certain method)
 * Add a `kb-sdk coverage` command that runs a simple http server on the test coverage directory
