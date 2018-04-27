@@ -68,6 +68,7 @@ Disclaimer: Much of these ideas are unfinalized.
 * In app dev, always automatically pull the latest commit on master without having to re-register
 * Auto-generate a README.md with ideas from common-readme: https://github.com/noffle/common-readme
 * QuickCheck for apps based on KIDL specs (automatic tests based on the types)
+* Use an ENV var for setting the kbase auth token (eg KBASE_TOKEN)
 
 ### Resources
 
