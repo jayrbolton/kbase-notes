@@ -28,6 +28,7 @@ Disclaimer: Much of these ideas are unfinalized maybes.
 
 * Gitignore all auto-generated code that is not meant to be edited and silo it in /build. Could have `kb-sdk make` to generate /build.
 * Use PyPi-hosted, versioned KBase pip packages for utilities
+  * Eg. all the python client code could live in a pip package
 * Continue to auto-generate configs (eg. `travis.yml`) as part of `kb-sdk init`
 * Example files that can be moved into /build or into pip packages:
   * /scripts and /test_local
