@@ -38,12 +38,15 @@ _Smaller misc changes_
 * `kb-sdk coverage` command that runs a simple http server on the test coverage directory
 * Accept python unittest options in `kb-sdk test` (eg. for only testing a certain method)
 * Log levels with an ENV variable -- increase/decrease debug messages using an env variable
+* Support for running debugger (eg `pdb`) on your tests
 
 _Larger maybes_
 
+* Be able to run workspace and auth services all locally (mini-kb)
 * Auto-generated run-time type checks from KIDL with python Cerberus
 * QuickCheck for apps based on KIDL specs (automatic tests based on the types)
 * Consider setting app versions with wildcards (eg. to `1.2.*` or `1.*`) as the default for all installed apps.
+* Support stream processing for large datasets (Arfath)
 
 _Smaller maybes_
 
@@ -61,7 +64,8 @@ _Smaller maybes_
 
 ### Codebase cleanup
 
-* Gitignore all auto-generated code that is not meant to be edited and silo it in /build. Could have `kb-sdk make` to generate /build.
+* Clean up all the app / method naming messiness (Bill & Paramvir)
+* Gitignore all auto-generated code that is not meant to be edited and silo it in /build. Could have `kb-sdk make` to generate /build when you clone an existing app
 * Use PyPi-hosted, versioned KBase pip packages for utilities
   * Eg. move all the client code into a pypi package
 * Continue to auto-generate configs (eg. `travis.yml`) as part of `kb-sdk init`
@@ -70,9 +74,12 @@ _Smaller maybes_
   * authclient, baseclient, `*Client.py`, & java servers
   * Test class setup code
   * Makefile
+* (Arfath) Use GraphQL for api/interface inspiration
 
 ### General ease-of-use
 
+* Generally provide easier / higher-abstraction utilities for testing, files, etc.
+* Provide better test data more readily -- eg. provide a test workspace with data preloaded (Paramvir)
 * Script generator and scaffolding commands
   * Could be in the CLI or in an online UI (Jeff's examples: [ebot](https://www.ncbi.nlm.nih.gov/Class/PowerTools/eutils/ebot/ebot.cgi) and [nersc jobscript generator](https://my.nersc.gov/script_generator.php))
   * Need to expand concrete ideas here
