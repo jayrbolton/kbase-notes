@@ -4,14 +4,14 @@ Disclaimer: Much of these ideas are unfinalized.
 
 ## Docs
 
-* Dedicated docs repo and website with Sphinx
-  * Move SDK app dev docs out of kb_sdk and into separate repo
-    * Easier PR turnaround
-  * Expand tutorial to use a different example that modifies Dockerfile and generates report files
+* Dedicated docs repo and website with Sphinx ([see here](https://kbase.github.io/kb_sdk_docs/))
+  * Move SDK app dev docs out of kb_sdk and into separate repo -- easier PR turnaround -- document `kb_sdk` itself
+  * Expand tutorial to use a different example that modifies the Dockerfile and generates report files
   * Continue to clean up and expand How-to collection
   * More working examples
   * Expand overview text, graphics, and visualizations
 * Filled-out README.md's for all apps with example apps -- (esp. reused apps)
+* General improvement and auditing of auto-generated documentation in the catalog (eg. for local functions)
 
 ## SDK code improvements
 
