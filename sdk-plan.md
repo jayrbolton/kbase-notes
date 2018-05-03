@@ -13,6 +13,27 @@ Disclaimer: Much of these ideas are unfinalized.
 * Filled-out README.md's for all apps with example apps -- (esp. reused apps)
 * General improvement and auditing of auto-generated documentation in the catalog (eg. for local functions)
 
+## Roadmap
+
+1. Codebase cleanup
+   * Consolidate and organize all the script code
+   * Remove client code
+   * Reorganize directory structures
+2. Test improvements
+   * Docker persistence, shock caching, isolated testing
+3. Config consolidation
+   * Single validated yaml config -- use readme as app description
+4. Ease of use (can work on everything here until the timeframe ends)
+   * Report abstraction (view/template directory, return params)
+   * File uploading and downloading abstractions (ie. easier utils)
+   * `kb-sdk` command expansion (`shell`, `coverage`, `status`, `release`, `test` options etc)
+   * Error logging with log levels, human readable reports, links, etc.
+   * Support running debuggers (eg. `pdb`)
+   * Auto-generate a better readme 
+   * Use ENV var for auth tokens
+   * Usage of pip and conda for utilities
+
+
 ## SDK code improvements
 
 Tentatively ordered by priority
